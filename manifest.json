@@ -1,0 +1,12 @@
+{
+  "name": "Bank of America CC display",
+  "version": "1.0",
+  "description": "Simplifies credit card display",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://secure.bankofamerica.com/myaccounts/signin/signIn.go*", "https://secure.bankofamerica.com/myaccounts/brain/redirect.go?target=accountsoverview*"],
+      "js": ["balance.js"]
+    }
+  ]
+}
